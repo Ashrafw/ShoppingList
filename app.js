@@ -33,6 +33,7 @@ function purchasedShopItem(e) {
 }
 
 function addItem(e) {
+  e.preventDefault();
   if (newItemInput.value == '') {
     alert('Enter a valid input');
   } else {
@@ -57,6 +58,4 @@ function addItem(e) {
     // initialize the input
     newItemInput.value = '';
   }
-
-  e.preventDefault();
 }
